@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link href="logo.png" rel="icon" type="image/png" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/set1.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css">
+	<!-- fonts -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	<script>
+			function startTime() {
+			  var today = new Date();
+			  var h = today.getHours();
+			  var m = today.getMinutes();
+			  var s = today.getSeconds();
+			  m = checkTime(m);
+			  s = checkTime(s);
+			  document.getElementById('txt').innerHTML =
+			  h + ":" + m + ":" + s;
+			  var t = setTimeout(startTime, 500);
+			}
+			function checkTime(i) {
+			  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			  return i;
+			}
+			</script>
+</head>
+
+<body style="background-color:white;" onload="startTime()">
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="http://webdesign-finder.com/html/electrix/">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<section class="page_topline ls section_padding_15">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-md-push-4 text-center"> <p> <i class="fa fa-phone grey rightpadding_5" aria-hidden="true"></i> 1-888-123-4567 </p> </div>
+						<div class="col-md-4 col-sm-6 col-md-pull-4 text-center text-md-left">
+							<div class="inline-content small-text">
+								<p id="txt" style="font-weight:bold; font-size:15px;">   </p>								
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 text-center text-md-right">
+							<div class="inline-content small-text">
+								<p class="greylinks"> <i class="fa fa-pencil grey rightpadding_5" aria-hidden="true"></i> <a href="mailto:electrcs@gmail.com">electrcs@gmail.com</a> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<header class="page_header header_white toggler_xs_right section_padding_25">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"> <a href="index.html" class="logo top_logo">
+                        <img src="images/logo.png" alt="">
+                    </a> </div>
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active"> <a href="index.html">Home</a>
+											
+										</li>
+										<li> <a href="about.html">Distributor Login</a></li>
+										<!-- eof pages -->
+										<li> <a href="products.html">Sales Persin Login</a>
+										</li>
+										<li> <a href="#">Customer Login</a></li>
+										<!-- eof features -->
+										<!-- blog -->
+										<li> <a href="contact.html">Contact Us</a></li>
+										<!-- eof contacts -->
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</header>
+			
+			<!-- eof header -->
+			
+			<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="text-uppercase">Distributor Login</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+
+   <form name="form1" method="post" action="">
+     <div class="col-md-4 col-md-offset-4" id="outer" align="center">
+		<table>
+				<tr>
+					<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="email" name="email" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">E-mail id</span>
+					</label>
+				</span>
+				</tr>
+				<tr>
+				<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="password" name="password" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Password</span>
+					</label>
+				</span>
+			</tr>
+				<tr>
+					<td colspan=2 align=center class="errors">
+						<div id="final">		
+							<input name="verify" id="submit" type="submit" value="Login">
+						</div>
+					</td>
+				</tr>
+				<br>
+	</div>
+        
+    </form></td>
+  </tr>
+</table>
+</div>
+</div>
+<script src="js/classie.js"></script>
+<script src="js/stable.js"></script>
+</body>
+<style>
+	#outer
+	{
+		
+		padding: 10px; 
+		background-color:white; 
+		border: 1px solid black;
+		border-radius: 8px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+	}
+	input{
+		border-radius:5px;
+	padding:3px;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+	}
+	form
+	{
+		color:black;
+	}
+	#final
+	{
+		text-align:center; 
+		display:inline; 
+		padding-right:2em;	
+	}
+	#submit
+	{
+	 background-color: white; 
+    color: black; 
+    border: 0px solid #e7e7e7;
+	 border-radius: 5px;
+    padding: 10px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 10px 10px 40px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	}
+	#submit:hover
+	{
+		background-color: #e7e7e7;
+	}
+	input:hover{	
+		box-shadow: 1px 2px 3px gray;
+	}
+	td{
+		padding:8px;
+	}
+</style>
+</html>
