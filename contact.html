@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Login</title>
+<title>Contactus</title>
 <link href="logo.png" rel="icon" type="image/png" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta charset="utf-8">
@@ -141,33 +141,49 @@
 			</section>
 <!--Map section-->
 <div class="container">
-	<div class="row">
-		<div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
-			<div class="map">
-				<iframe src="https://www.google.com/maps/place?key=AIzaSyD5id_HMM6BkOGTEOIAFzMJZrTA4ud2Z_E&q=Bharat+Gas+Office,+ModernGas/@13.746958,79.7031283,15z/data=!4m5!3m4!1s0x0:0xd828178cc3e01665!8m2!3d13.7467324!4d79.7093135" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			
+	<div class="row" >
+		<div class="col-md-7 col-lg-7 col-sm-12 col-xs-12" style="padding-top:20px">
+			<div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Bharath%20gas%20office%2CKovanur%20Road%2C%20NTR%20Nagar%2C%20Kondamitta%2C%20Srikalahasti%2C%20Andhra%20Pradesh%20517644+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=19&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe>
+			</div><br />
 		</div>
 		<!--form section-->
 		<div class="col-md-offset-1 col-md-4 col-lg-4 col-sm-12 col-xs-12">
 			 <form>
-					<div>
-						<label for="name">Name</label>
-						<input id="name" type="text" class="form-control" placeholder="Enter your name">
-					</div>
-					<div class="form-group email">
-						<label for="email">Email<span class="required">*</span></label>
-						<input id="email" type="email" class="form-control" placeholder="Enter your email">
-					</div>
-					<div class="form-group phone">
-						<label for="phone">Phone</label>
-						<input id="phone" type="tel" class="form-control" placeholder="Enter your contact number">
-					</div>
+				<tr>
+					<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" name="name" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Name</span>
+					</label>
+					</span>
+				</tr>
+					<tr>
+					<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="email" name="email" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">E-mail id</span>
+					</label>
+				</span>
+				</tr>
+					<tr>
+					<span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="number" name="mobile" id="input-4" required />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi">Phone</span>
+					</label>
+				</span>
+				</tr>
 					<div class="form-group message">
 						<label for="message">Message<span class="required">*</span></label>
 						<textarea id="message" class="form-control" rows="6" placeholder="Enter your message here..."></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary">Send message</button>
+					<tr>
+					<td colspan=2 align=center class="errors">
+						<div id="final">		
+							<input name="feed" id="submit" type="submit" value="Send Message">
+						</div>
+					</td>
+				</tr>
               </form> 
 		</div>
 	</div>
