@@ -21,16 +21,14 @@
 <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Alegreya:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="js/vendor/html5shiv.min.js"></script>
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
 	<script>
 			function startTime() {
 			  var today = new Date();
@@ -110,18 +108,16 @@
 								<!-- main nav start -->
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
-										<li class="active"> <a href="dis_home.html">Home</a>
+										<li class="active"> <a href="dis_profile.html">Home</a>
 											
 										</li>
-										<li> <a href="dis_sa_register.html">Register Sales Person</a></li>
+										<li> <a href="#">Register delivery person</a></li>
 										<!-- eof pages -->
-										<li> <a href="dis_profile.html">View Profile</a></li>
 										<li> <a href="#">Register Customer</a>
 										</li>
 										<li> <a href="#">Display customers</a></li>
 										<!-- eof features -->
 										<!-- blog -->
-										
 										<li> <a href="#">Logout</a></li>
 										<!-- eof contacts -->
 									</ul>
@@ -134,7 +130,10 @@
 					</div>
 				</div>
 			</header>
-	<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
+			
+			<!-- eof header -->
+			
+			<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
@@ -206,59 +205,61 @@
 								<button id="sa_edit" class="theme_button wide_button color1 topmargin_40">Edit Details</button> 
 								<button type="submit" class="theme_button wide_button">Update Details</button>  
 								<button type="button" data-toggle="modal" data-target="#myModal" id="sa_upass" class="theme_button wide_button color2 topmargin_40 pull-right">Change password</button>
-							</div>		
-						</form>						
-					</div>
-					<div class="modal fade" id="myModal" role="dialog" style="z-index:99999">
-								<div class="modal-dialog">
+							</div>
+							<div class="modal fade" id="myModal" role="dialog" style="z-index:99999">
+						<div class="modal-dialog">
 						<!-- Modal content-->
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal">&times;</button>
-											<h4 class="modal-title">Change Password</h4>
-										</div>
-									<div class="modal-body">
-										<div calss="container-fluid">
-											<form class="form-horizontal tpad" role="form" method="post" action="" enctype="multipart/form-data">
-												<div class="form-group">
-													<div class="col-md-2"></div>
-														<div class="col-md-8">
-															<input type="text" name="c_pass" class="form-control" id="c_pass" placeholder = "Current Password" required>
-															<input type="text" name="n_pass" style="margin-top:15px;" class="form-control" id="n_pass"  placeholder = "New Password" required>
-															<button type = "submit"  style="margin-top:15px;" name="quick_apply" class ="btn btn-primary pull-right">Change Password</button>
-														</div>
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Change Password</h4>
+								</div>
+								<div class="modal-body">
+									<div calss="container-fluid">
+										<form class="form-horizontal tpad" role="form" method="post" action="" enctype="multipart/form-data">
+											<div class="form-group">
+												<div class="col-md-2"></div>
+													<div class="col-md-8">
+														<input type="text" name="c_pass" class="form-control" id="c_pass" placeholder = "Current Password" required>
+														<input type="text" name="n_pass" style="margin-top:15px;" class="form-control" id="n_pass"  placeholder = "New Password" required>
+														<button type = "submit"  style="margin-top:15px;" name="quick_apply" class ="btn btn-primary pull-right">Change Password</button>
 													</div>
 												</div>
-												</br></br>
-												<div class="modal-footer">
-													<div class="col-md-offset-1 col-md-6"></div>
-												</div>
-											</form>	
-										</div>
+											</div>
+											</br></br>
+											<div class="modal-footer">
+												<div class="col-md-offset-1 col-md-6"></div>
+										</form>
 									</div>
 								</div>
 							</div>
-				</section>
-				<script type="text/javascript">
-					$(document).ready(function(){
-					$("#sa_edit").click(function(){
-						$(".dis_field").prop("disabled", false);
-						});
-					});
-				</script>
-				<section class="ds color page_copyright section_padding_15 with_top_border_container">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 text-center">
-								<p class="small-text big">&copy; Copyright 2019. All Rights Reserved.</p>
-							</div>
 						</div>
 					</div>
-				</section>
-			</div>
-		<!-- eof #box_wrapper -->
+							
+						</form>
+						
+				</div>
+			</section>
+			<script type="text/javascript">
+				$(document).ready(function(){
+				$("#sa_edit").click(function(){
+					
+					$(".dis_field").prop("disabled", false);
+					});
+				});
+			</script>
+			<section class="ds color page_copyright section_padding_15 with_top_border_container">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text big">&copy; Copyright 2019. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-		<script src="js/compressed.js"></script>
-		<script src="js/main.js"></script>
+		<!-- eof #box_wrapper -->
 	</div>
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
 </body>

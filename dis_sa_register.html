@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Register</title>
+<title>Home</title>
 <link href="logo.png" rel="icon" type="image/png" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta charset="utf-8">
@@ -26,6 +26,11 @@
 		<script src="js/vendor/respond.min.js"></script>
 		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 	<![endif]-->
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 	<script>
 			function startTime() {
 			  var today = new Date();
@@ -105,17 +110,19 @@
 								<!-- main nav start -->
 								<nav class="mainmenu_wrapper">
 									<ul class="mainmenu nav sf-menu">
-										<li class="active"> <a href="index.html">Home</a>
+										<li class="active"> <a href="dis_home.html">Home</a>
 											
 										</li>
-										<li> <a href="about.html">Distributor Login</a></li>
+										<li> <a href="dis_sa_register.html">Register Sales Person</a></li>
 										<!-- eof pages -->
-										<li> <a href="products.html">Sales Persin Login</a>
+										<li> <a href="dis_profile.html">View Profile</a></li>
+										<li> <a href="#">Register Customer</a>
 										</li>
-										<li> <a href="#">Customer Login</a></li>
+										<li> <a href="#">Display customers</a></li>
 										<!-- eof features -->
 										<!-- blog -->
-										<li> <a href="contact.html">Contact Us</a></li>
+										
+										<li> <a href="#">Logout</a></li>
 										<!-- eof contacts -->
 									</ul>
 								</nav>
@@ -127,14 +134,11 @@
 					</div>
 				</div>
 			</header>
-			
-			<!-- eof header -->
-			
 			<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 text-center">
-							<h2 class="text-uppercase">Register Customer</h2>
+							<h2 class="text-uppercase">Register Sales Person</h2>
 						</div>
 					</div>
 				</div>
@@ -143,38 +147,38 @@
 				<div class="container" align="center">
 					<div class="row">
 						<form class="shop-register" role="form">
-							<div class="col-sm-6">
+							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-group validate-required" id="billing_first_name_field">
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_name" id="c_name" required />
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_name">
+									<input class="input__field input__field--hoshi" type="text" name="sa_name" id="sa_name" required />
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_name">
 									<span class="input__label-content input__label-content--hoshi">Name</span>
 									</label>
 									</span>
 								</div>
 								<div class="form-group validate-required" id="billing_first_name_field"> 
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="b_name" id="b_name" required />
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="b_name">
-									<span class="input__label-content input__label-content--hoshi">Business Name</span>
+									<input class="input__field input__field--hoshi" type="text" name="sa_mobile" id="sa_mobile" required />
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_mobile">
+									<span class="input__label-content input__label-content--hoshi">Primary Mobile</span>
 									</label>
 									</span>
 								</div>
 							</div>	
-							<div class="col-sm-6">
+							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-group validate-required" id="billing_last_name_field"> 
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_email" id="c_email"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_email">
+									<input class="input__field input__field--hoshi" type="text" name="sa_email" id="sa_email"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_email">
 									<span class="input__label-content input__label-content--hoshi">E-mail</span>
 									</label>
 									</span>
 								</div>
 								<div class="form-group validate-required" id="billing_last_name_field"> 
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_mobile" id="c_mobile"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_mobile">
-									<span class="input__label-content input__label-content--hoshi">Mobile</span>
+									<input class="input__field input__field--hoshi" type="text" name="sa_smobile" id="sa_smobile"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_smobile">
+									<span class="input__label-content input__label-content--hoshi">Secondary Mobile</span>
 									</label>
 									</span>
 								</div>
@@ -182,18 +186,18 @@
 							<div class="col-sm-12">
 								<div class="form-group address-field validate-required" id="billing_address_fields">  
 									<span class="input input--hoshi" style="max-width:950px">
-									<input class="input__field input__field--hoshi" type="text" name="c_addr" id="c_addr"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_addr">
+									<input class="input__field input__field--hoshi" type="text" name="sa_addr" id="sa_addr"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_addr">
 									<span class="input__label-content input__label-content--hoshi">Address</span>
 									</label>
 									</span>
 								</div>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-group validate-required" id="billing_last_name_field"> 
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_city" id="c_city"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_city">
+									<input class="input__field input__field--hoshi" type="text" name="sa_city" id="sa_city"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_city">
 									<span class="input__label-content input__label-content--hoshi">Town/City</span>
 									</label>
 									</span>
@@ -203,26 +207,19 @@
 										<option value="" selected="selected">Select a state</option>
 									</select> 
 								</div>
-								<div class="form-group" align="left" style="margin-left:100px;">
-									<div class="radio"> <label>
-										<input type="radio" name="optionsRadios" id="c_type">Customer
-									</label> </div>
-									<div class="radio"> <label>
-										<input type="radio" name="optionsRadios" id="c_type">User
-									</label> </div>
-								</div>
+						
 							</div>
-							<div class="col-sm-6">
+							<div class="col-lg-6 col-md-6 col-sm-12">
 								<div class="form-group validate-required" id="billing_last_name_field"> 
 									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_pincode" id="c_pincode"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_pincode">
+									<input class="input__field input__field--hoshi" type="text" name="sa_pincode" id="sa_pincode"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="sa_pincode">
 									<span class="input__label-content input__label-content--hoshi">Pincode</span>
 									</label>
 									</span>
 								</div>
 								<div class="form-group"> <label for="billing_country" class="control-label">
-									<select class="form-control" name="c_country" id="c_country" style="width:350px">
+									<select class="form-control" name="sa_country" id="sa_country" style="width:350px">
 										<option value="" selected="selected">Select a country</option>
 									</select>
 								</div>
