@@ -144,29 +144,12 @@
 					<div class="row">
 						<form class="shop-register" role="form">
 							<div class="col-sm-6">
-								<div class="form-group validate-required" id="billing_first_name_field">
-									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_name" id="c_name" required />
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_name">
-									<span class="input__label-content input__label-content--hoshi">Name</span>
-									</label>
-									</span>
-								</div>
+								
 								<div class="form-group validate-required" id="billing_first_name_field"> 
 									<span class="input input--hoshi">
 									<input class="input__field input__field--hoshi" type="text" name="b_name" id="b_name" required />
 									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="b_name">
 									<span class="input__label-content input__label-content--hoshi">Business Name</span>
-									</label>
-									</span>
-								</div>
-							</div>	
-							<div class="col-sm-6">
-								<div class="form-group validate-required" id="billing_last_name_field"> 
-									<span class="input input--hoshi">
-									<input class="input__field input__field--hoshi" type="text" name="c_email" id="c_email"/>
-									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_email">
-									<span class="input__label-content input__label-content--hoshi">E-mail</span>
 									</label>
 									</span>
 								</div>
@@ -177,6 +160,41 @@
 									<span class="input__label-content input__label-content--hoshi">Mobile</span>
 									</label>
 									</span>
+								</div>
+								<div class="form-group validate-required" id="billing_last_name_field">
+									<label for="c_mobile">
+									<span style="color:#6a7989; font-weight:800">Upload business sample image</span>
+									</label>
+									<input type="file" name="c_mobile" id="c_mobile"/>
+								</div>
+							</div>	
+							<div class="col-sm-6">
+								<div class="form-group validate-required" id="billing_first_name_field">
+									<span class="input input--hoshi">
+									<input class="input__field input__field--hoshi" type="text" name="c_name" id="c_name" required />
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_name">
+									<span class="input__label-content input__label-content--hoshi">Name</span>
+									</label>
+									</span>
+								</div>
+								<div class="form-group validate-required" id="billing_last_name_field"> 
+									<span class="input input--hoshi">
+									<input class="input__field input__field--hoshi" type="text" name="c_email" id="c_email"/>
+									<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="c_email">
+									<span class="input__label-content input__label-content--hoshi">E-mail</span>
+									</label>
+									</span>
+								</div>
+								<div class="form-group"> <label for="c_omc" class="control-label">
+									<select class="form-control" name="c_omc" id="c_omc" style="width:350px">
+										<option value="" selected="selected">Select OMC</option>
+										<option value="bpc">BPC</option>
+										<option value="hpc">HPC</option>
+										<option value="ioc">IOC</option>
+										<option value="super_gas">Super Gas</option>
+										<option value="go_gas">Go Gas</option>
+										<option value="total_gas">Total Gas</option>
+									</select> 
 								</div>
 							</div>
 							<div class="col-sm-12">
@@ -203,14 +221,7 @@
 										<option value="" selected="selected">Select a state</option>
 									</select> 
 								</div>
-								<div class="form-group" align="left" style="margin-left:100px;">
-									<div class="radio"> <label>
-										<input type="radio" name="optionsRadios" id="c_type">Customer
-									</label> </div>
-									<div class="radio"> <label>
-										<input type="radio" name="optionsRadios" id="c_type">User
-									</label> </div>
-								</div>
+								
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group validate-required" id="billing_last_name_field"> 
@@ -225,6 +236,12 @@
 									<select class="form-control" name="c_country" id="c_country" style="width:350px">
 										<option value="" selected="selected">Select a country</option>
 									</select>
+								</div>
+							</div>
+							<div class="col-sm-12">
+								<div class="form-group address-field validate-required validate-postcode" id="c_feed"> <label for="c_feed" class="control-label">
+									<span style="color:#6a7989; font-weight:900">Feedback:</span>
+									</label> <textarea class="form-control" rows="4" cols="30" name="c_feed" id="c_feed" style="resize:none; margin: 0px 92.5px;width:954px; height: 125px;" placeholder="" value=""></textarea> 
 								</div>
 							</div>
 							<div class="col-sm-12"> <button type="submit" class="theme_button wide_button color1 topmargin_40">Register Now</button> <button type="reset" class="theme_button wide_button">Clear Form</button> </div>
