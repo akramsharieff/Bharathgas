@@ -9262,7 +9262,9 @@ body.active-side-header.slide-right .page_header_side {
 .ds .entry-meta .comments-link a {
 	color: #ffffff;
 }
-
+table tbody tr:nth-child(even) {
+    background: #f4f4f4;
+}
 .ds #timetable tbody th,
 .ds #timetable tbody td {
 	border-color: rgba(152, 152, 152, 0.2);
