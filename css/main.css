@@ -10512,7 +10512,9 @@ section .intro_section .slide_description_wrapper {
 
 	.intro_section .slide_description_wrapper {
 		padding: 0;
-		position: static;
+		position: absolute;
+		vertical-align: middle;
+		top:20%;
 	}
 
 	.intro_section .flex-direction-nav .flex-prev {
