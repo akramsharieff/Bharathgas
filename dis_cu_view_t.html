@@ -135,37 +135,123 @@
 					</div>
 				</div>
 			</header>
-			<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="text-uppercase">Hotel_name</h2>
-						</div>
-					</div>
+<section class="page_breadcrumbs ds color parallax section_padding_top_20 section_padding_bottom_20">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-sm-12 text-center">
+
+					<h2 class="text-uppercase" id="ui_title"></h2>
+
 				</div>
-			</section>
-			<section style="padding-top: 30px;">
-			<form action="" method="post" enctype="multipart/form-data">
-				<div class="container">
-					<h6 style="display:inline;">Hotel # :&nbsp; </h6>Hotel_ID<hr>	
-					<h6 style="display:inline;">Proprieter : &nbsp;</h6 > Owner_name<hr>
-					<h6 style="display:inline;">E mail  : &nbsp;</h6> Owner_email<hr>
-					<h6 style="display:inline;">Mobile  : &nbsp;</h6> <span> Owner_mobile,  owner_sec_mobile </span><hr>
-					<h6 style="display:inline;">OMC  : &nbsp;</h6> Owner_omc<hr>
-					<h6>Job Description</h6>
-					<p style="align:justify" class="condensedlines">afs;flskf;fk;flas;dka;flkf;fjfl.sfllfjwoejjwfjsfklsfjoweiefjwlf.kaflksjfsfoeojfjsdlkfjfjfslkfsldfjsdlkvnoifjlfofjslkdflksf</p><hr>
-					<h6 style="display:inline;">Registered by  : &nbsp;</h6> Owner_registered_by<hr>
-					<h6 style="display:inline;">Registered on  : &nbsp;</h6> Owner_registered_on<hr>
-					<h6 >Address  :</h6>
-					<p>Owner Address</p><hr>
-					<h6 style="display:inline;">City  : &nbsp;</h6> Owner_city<hr>
-					<h6 style="display:inline;">State  :&nbsp;</h6> Owner_state<hr>
-					<h6 style="display:inline;">Zip Code : &nbsp;</h6>owner_zipcode<hr>
-					<h6 style="display:inline;">Country  : &nbsp;</h6> Owner_country<hr>
-				</div>
-				<div align="center" style="margin-bottom:20px; "></div>
-				<div align="center" class="container"style="margin-bottom:20px;">
-					<input style="border-radius:5px; padding:7px;" type="submit" name="submit" value="Locate Address" class="col-md-offset-3 col-md-2"/>
-				</div>
-			</form>
-			</section>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<section style="padding-top: 30px;">
+
+		{{!-- <form action="" method="post" enctype="multipart/form-data"> --}}
+
+		<div class="container">
+
+			<h6 style="display:inline;">Proprietor : &nbsp;</h6> <span id="ui_proprietor_name"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">E-mail : &nbsp;</h6> <span id="ui_email"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">Mobile : &nbsp;</h6> <span id="ui_primary_mobile"></span>, &nbsp; <span
+
+				id="ui_secondary_mobile"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">OMC : &nbsp;</h6> <span id="ui_omc"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">Demand : &nbsp;</h6>
+
+			<span id="ui_demand">
+
+			</span>
+
+			<hr>
+
+
+
+			<h6 style="display:inline;">Current Package : &nbsp;</h6>
+
+			<span id="ui_package">
+
+			</span>
+
+			<hr>
+
+			<h6 style="display:inline;">Current discount : &nbsp;</h6>
+
+			<span id="ui_discount">
+				
+			</span>
+
+			<hr>
+
+			<h6 style="display:inline;">Feedback : &nbsp;</h6>
+
+			<br><br>
+			<div>
+			<p style="align:justify" class="condensedlines" id="ui_feedback">
+				fkjjflkjfasfjaklfjsf klsjlkdgdlkgjdg lkdgldkgjl; sklkksgklss klfjslkkjsgda d  gadkah dkjadhk jdhdhwdsdkqkwdKDJHHQI
+			</p>
+			
+
+			<hr>
+
+			<h6 style="display:inline;">Registered by : &nbsp;</h6> <span id="ui_added_by"></span>
+
+			<hr>
+
+			<h6>Address :</h6>
+
+			<p id="ui_address"></p>
+
+			<hr>
+
+			<h6 style="display:inline;">City : &nbsp;</h6> <span id="ui_city"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">State :&nbsp;</h6><span id="ui_state"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">Pin Code : &nbsp;</h6> <span id="ui_pincode"></span>
+
+			<hr>
+
+			<h6 style="display:inline;">Country : &nbsp;</h6> <span id="ui_country"></span>
+
+			<hr>
+
+		</div>
+
+		<div align="center" style="margin-bottom:20px; "></div>
+
+		<div align="center" class="container" style="margin-bottom:20px;">
+
+			<input style="border-radius:5px; padding:7px;" type="submit" name="submit" value="Locate Address"
+
+				class="col-md-offset-3 col-md-2" />
+
+		</div>
+
+		{{!-- </form> --}}
+
+	</section>
